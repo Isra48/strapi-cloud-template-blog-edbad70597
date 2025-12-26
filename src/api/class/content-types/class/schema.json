@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "classes",
+  "info": {
+    "singularName": "class",
+    "pluralName": "classes",
+    "displayName": "Class"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "startAt": {
+      "type": "datetime",
+      "required": true
+    },
+    "endAt": {
+      "type": "datetime"
+    },
+    "timezone": {
+      "type": "string",
+      "default": "America/Mexico_City"
+    },
+    "category": {
+      "type": "string"
+    },
+    "instructor": {
+      "type": "string"
+    },
+    "modality": {
+      "type": "enumeration",
+      "enum": [
+        "Zoom",
+        "Presencial",
+        "Grabado"
+      ]
+    },
+    "materials": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}
